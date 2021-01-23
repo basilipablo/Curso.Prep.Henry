@@ -1,0 +1,17 @@
+* Objetos
+*Meme de astronauta disparando* - Todos son objetos - Siempre lo fueron.
+Los objetos son la base del lenguaje, pero para llegar a entenderlos bien primero teníamos que explicar arrays, buleanos y demás.
+Un objeto es una forma de ordenar la información, así como los arrays tienen índices los objetos tienene propiedades, estas tienen un nombre, por ejemplo el objeto var perro = {nombre: inti, raza: caniche, edad: 7, pulgas: false, garrapatas: 2} es mi perro, se los presento.
+* Propiedades
+Podemos ver que en un objeto entran números, strings, buleanos, otros objetos, arrays, funciones, todo.
+Podemos acceder a algunas propiedades con el método objeto[propiedad], en el caso de mi perro podemos acceder a su nombre con perro[nombre] o perro.nombre, el segundo es un poquito más triky, así que te vamos a pedir, pequeño pre adolescente de 12 años, que no lo uses.
+* Métodos
+A las funciones se las conoce como método, quedó de los ancient times y sigue así. Entonces inti.bark = function() {console.log('Wof! wof!')} es un método de agregarle ladrido a nuestro perro. Primero creamos la propiedad inti.bark y luego le pusimos una función adentro. ¿queremos que ladre? y si, si es un perro.raza = caniche, entonces llamamos esa función con perro.bark()
+* Bucle `for…in`
+Un bucle for se usa para iterar por todas las propiedades de un objeto, así for(const property in perro) {acá le podemos poner una orden para que haga con cada propiedad}.
+* Notación de puntos vs notación de corchetes
+la notación de punto es nuestra no recomendada perro.raza para acceder a una propiedad, además tenemos la otra si recomendada de perro['raza'].
+Una es una abreviación, pero nos puede confundir ya que si usamos comillas para la propiedad puede no invocarla o invocar undefined.
+Además entre corchetes podemos poner otra variable y así concatenar llamadas. el dot notation solamente permite la literalidad, poner la propiedad como está, no var i = nombre y perro.i porque va a buscar la propiedad i en perro, no la propiedad i en el objeto global de Javascript.
+¿objeto global? ¿entonces todo es un objeto? Volvemos a nuestro astronauta disparador: astronauta2.dialogo = 'Always Has Been'.
+Además, tenés 12 años, dale tiempo, usá corchetes por ahora y ya vas a tener edad suficiente (?) para la dot notation, todo a su tiempo.
