@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background-image: url(https://nintendosoup.com/wp-content/uploads/2020/02/animal-crossing-new-horizons-walmart-wallpaper-feb192020-1.jpeg);
+    background-size: cover;
+    margin: auto;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+    position: absolute;
+    left: 0px;
+    color: #C54F4F;
+    font-family: 'Lobster', cursive;
+    width: 500px;
+    margin: 5px auto;
+    padding: 5px;
+    border: solid #6668d2 5px;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+    max-width: 400px;
+}
+
+div {
+    position: center;
+    margin: auto;
+    max-width: 50%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+#thirdDiv {
+    max-height: 600px;
+    max-width: 500px;
+    background-color: #C54F4F;
+    padding: 50px;
+    border: #726868;
+    border-style: groove;
+}
+
+#spanID {
+    font-size: 18px;
+    margin: 50px;
+}

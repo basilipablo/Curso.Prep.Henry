@@ -10,6 +10,10 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var matrix = Object.getOwnPropertyNames(objeto);
+  for (let i = 0; i < objeto.length; i++) {
+    matrix[i].push(objeto.i);
+} return matrix;
 }
 
 
@@ -18,6 +22,15 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  nuevoobj = {};
+  for (let i = 0; i < string.length; i++) {
+  if (nuevoobj.hasOwnProperty(string[i]) == true) {
+    nuevoobj.string[i]++; 
+  } else {
+    nuevoobj[string[i]] = 0;
+  };
+  return nuevoobj;
+} 
 }
 
 
@@ -26,6 +39,7 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
 }
 
 
@@ -66,6 +80,13 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  nuevoarr = [];
+  for (let i = 0; i < arreglo1.length; i++) {
+    if (arreglo2.includes(arreglo1[i]) == true) {
+      nuevoarr.push(arreglo1[i]);
+    }
+  }
+  return nuevoarr;
 }
 
 

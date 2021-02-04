@@ -1,0 +1,13 @@
+Bienvenido nuevamente querida persona de 12 años.
+
+Hoy vamos a hablar de herencias y clases.
+
+* `prototype` 
+En Javascript se construyen objetos para replicar y acceder a información. Pero también hay una forma de crear una clase y de allí objetos, una clase es un objeto madre que tiene categorías (pueden estar preseteadas en caso de ser dejadas en blanco al crear al objeto-hijo).
+Entonces podemos partir de una clase Perro que tenga por defecto los siguientes componentes: {patas: 4, fidelidad: true} y así, pero además tiene que tener algunas propiedades para rellenar cuando creamos un nuevo perro.
+Así dejamos el nombre, edad y vacunas para que se llena cada vez que se crea un nuevo perro. Así el objeto var Inti : new Perro(Inti, 7, true) va a crear un objeto perro que tenga esas propiedades, pero a la vez que herede de su prototipo u objeto madre ciertas características.
+A la vez ese prototipo también hereda de un prototipo general todas las funciones y propiedades de todos los objetos. Así existe un prototipo madre a todos los objetos, una raíz que viene con las funciones y propiedades comunes a todo objeto.
+La palabra prototype se escribe entre la clase y una nueva función para incluirla en el prototipo de ese objeto (esto se usa para ahorrar espacio, ya que es costoso que cada objeto nuevo tenga una función única cuando se puede incluir en los prototipos de todos los objetos creados bajo la misma clase).
+
+* _Constructors_ (de Clases)
+Son un método para construir un objeto a partir de una clase, así un constructor llama a una clase para crear ese objeto. Al ser llamado objeto.constructor nos devolverá la clase desde la que fue creado ese objeto.

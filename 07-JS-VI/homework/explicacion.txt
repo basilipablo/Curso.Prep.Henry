@@ -1,0 +1,7 @@
+Buenos días querido niño de 12 años. Aquí vamos con una explicación de qué son las callback functions.
+
+Son funciones que entran como argumento de otras funciones, esto quiere decir que podemos construir una acción que, para funcionar, requiera llamar a otra acción.
+Por ejemplo, si creamos una función que sea sumar dos elementos llamada suma (function suma), es una función sola, pero si además luego creamos otra que ponga los elementos a sumar y además nos devuelve un mensaje de "Su suma es: " + suma;
+Importante! no llames la función callback en la original, es decir, no le pongas los paréntesis, porque la va a ejecutar y va a usar el return de esa función como parámetro y no la función en si.
+
+Saludos.

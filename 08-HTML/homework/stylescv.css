@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@700&display=swap');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: url(https://cdn.wallpapersafari.com/20/86/Yo2ODZ.jpg);
+  background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    margin-top: 100px;
+  }
+
+.imgperfil {
+    max-width: 200px;
+    max-height: 500px;
+  }
+
+nav {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    background-color: rgb(186, 186, 186, 0.6);
+    border: solid #6668d2 2px;
+    border-radius: 8px;
+  }
+
+section {
+    margin-left: 202px;
+    background-color: rgb(186, 186, 186, 0.6);
+    border: solid #6668d2 2px;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: rgba(93, 219, 181, 0.5);
+    width: 100%;
+  }
+
+h5, span {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  margin-left: 220px;
+  text-shadow: 2px 2px 5px darkgray;
+}
+
+h1:hover, span:hover {
+  color: hsl(64, 100%, 60%);
+}
