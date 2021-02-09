@@ -10,10 +10,8 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
-  var matrix = Object.getOwnPropertyNames(objeto);
-  for (let i = 0; i < objeto.length; i++) {
-    matrix[i].push(objeto.i);
-} return matrix;
+  var matrix = Object.entries(objeto);
+  return matrix;
 }
 
 
@@ -22,15 +20,15 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  nuevoobj = {};
+  var nuevoobj = new Object();
   for (let i = 0; i < string.length; i++) {
-  if (nuevoobj.hasOwnProperty(string[i]) == true) {
-    nuevoobj.string[i]++; 
-  } else {
-    nuevoobj[string[i]] = 0;
-  };
-  return nuevoobj;
-} 
+    var asa = string[i];
+    if(nuevoobj.hasOwnProperty(string[i])) {
+      nuevoobj[asa]++;
+    } else {
+      nuevoobj[asa] = 1;
+    };
+  } return nuevoobj;
 }
 
 
@@ -39,7 +37,7 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
-
+  return s.replace(/((?:[A-Z]+)|([^A-Z]+))/g, '!!$&').split('!!').sort().join('');
 }
 
 
