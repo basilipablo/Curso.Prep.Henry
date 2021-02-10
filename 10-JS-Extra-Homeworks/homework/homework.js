@@ -47,6 +47,12 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  var stringa = str.split(' ');
+  var stringb = ''
+  for(let i = 0; i < stringa.length; i++) {
+  stringb += stringa[i].split('').reverse().join('') + ' ';
+  }
+  return stringb.slice(0, -1);
 } 
 
 
@@ -55,6 +61,12 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  var numrev = numero.toString().split('').reverse().join('');
+  if (numero == numrev) {
+    return "Es capicua"
+  } else { 
+    return "No es capicua"
+  }
 }
 
 
@@ -62,6 +74,13 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  for (let i = 0; i < cadena.length; i++) {
+    if (cadena[i] == 'a' || cadena[i] == 'b' || cadena[i] == 'c') {
+      cadena = cadena.replace(cadena[i], '');
+      i =- 1;
+    } 
+  }
+  return cadena;
 }
 
 
@@ -69,6 +88,16 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+    var newarr = arr.sort(function (a, b) {
+      if (a.length > b.length) {
+        return 1;
+      }
+      if (a.length < b.length) {
+        return -1;
+      }
+      return 0;
+    });
+    return newarr;
 }
 
 
