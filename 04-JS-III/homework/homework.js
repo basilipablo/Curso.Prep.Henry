@@ -241,7 +241,7 @@ function continueStatement(numero) {
   //Guardar cada nuevo valor en un array.    
   //Devolver el ary
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
-  //Pista: usá el statement 'continue'
+  //Pista: usá el statement continue.
   // Tu código:
   var arr = [];
   for(var i= 0; i<10; i++) {
