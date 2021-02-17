@@ -157,7 +157,7 @@ function operadoresLogicos(num1, num2, num3) {
 }
 
 function esPrimo(numero) {
-  // Devuelve "true" si "numero" es primo
+  // Devuelve "true" si 'numero' es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usao un bucle `for`
